@@ -5,7 +5,7 @@ ENV PYTHONDONTWRITEBYTECODE 1
 
 RUN set -e; \
     apt-get update ;\
-    apt-get -y install netcat ;\
+    apt-get -y install netcat-traditional ;\
     apt-get -y install gettext ;
 
 RUN mkdir /code
@@ -18,6 +18,6 @@ RUN set -e; \
     chmod +x /code/docker/entrypoints/entrypoint.sh ;
 
 EXPOSE 8000
-ENTRYPOINT ["/code/docker/entrypoints/entrypoint.sh"]
+ENTRYPOINT []
 
 
