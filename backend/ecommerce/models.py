@@ -32,7 +32,7 @@ class Item(
 
     def amount(self):
         #converts price from pence to pounds
-        amount = float(self.price / 100)
+        amount = float(self.price)
         return amount
 
     def manage_stock(self, qty):
